@@ -1,1 +1,47 @@
-https://replit.com/join/nmbosgabtq-abril-andreaand
+link to replit: https://replit.com/join/nmbosgabtq-abril-andreaand
+
+counter = 0 
+customers_who_bought = 0 
+wands_sold = 0 
+wands_bought = [] 
+
+elder = 0
+hawthorn = 0
+willow = 0
+holly = 0
+clientswhomadeollivandersad = 0
+
+client = str(input("Is there a client? yes/no "))
+while client == "yes": 
+  counter += 1
+  wand = input("Has a wand been bought? yes/no ")
+  if wand == "no":
+    clientswhomadeollivandersad += 1
+  elif wand == "yes":
+    print("""
+    1. Elder wand
+    2. Hawthorn wand
+    3. Willow wand
+    4. Holly wand""")
+    typeofwand = int(input("Which wand was sold? "))
+    if typeofwand == 1:
+      elder += 1
+    elif typeofwand == 2:
+      hawthorn += 1
+    elif typeofwand == 3:
+      willow += 1
+    elif typeofwand == 4:
+      holly += 1
+  client = input("Are there any clients? yes/no ")
+  if client == "no":
+    break
+  
+print(f"The number of customers we had today is: {counter}")
+print(f"The number of Elder wands sold today is: {elder}")
+print(f"The number of Hawthorn wands sold today is: {hawthorn}")
+print(f"The number of Willow wands sold today is: {willow}")
+print(f"The number of Holly wands sold today is: {holly}")
+print(f"The number of clients who didn't buy is: {clientswhomadeollivandersad}")
+
+  
+
