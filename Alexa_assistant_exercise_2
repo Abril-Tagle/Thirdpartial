@@ -1,1 +1,17 @@
+link to replit: https://replit.com/join/nbufvtpxgs-abril-andreaand
+
+print("Welcome to your Alexa assistant ")
+
+alexa = input("Say 'hey alexa' if you need something ").lower()
+
+idk_man = alexa.split(" ")
+print(idk_man)
+
+idk_either = idk_man.count("alexa")
+if idk_either == 0:
+  print("I can't help you if you don't say 'hey alexa' :)))")
+elif idk_either == 1:
+  print("Tell me, how can I help you?")
+elif idk_either >= 2:
+  print("Hey, say my name only once, please. No need to get mad :(")
 
