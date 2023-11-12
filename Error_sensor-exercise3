@@ -1,1 +1,28 @@
+link to replit: https://replit.com/join/rhibqwalhw-abril-andreaand
 
+print('Welcome to your error calculator') #I honestly have no idea what this even is
+
+notinorderdelegate = 0
+
+read = 0
+
+numberofread = int(input("\n How many readings do you have? "))
+
+while read < numberofread:
+  read += 1
+  
+  temperature = float(input(f"\n Insert temperature {read}: (Use Celsius degrees, just do ")) 
+  if temperature >= 10 and (temperature <= 40):
+    print("\n The temperature is in order")
+  else:
+    notinorderdelegate += 1
+
+
+errorrate = notinorderdelegate*100/ read
+#I really hope I did the rule of three correctly (if not, I'm sorry)
+
+
+print(f"The sensor went wrong {notinorderdelegate} times")
+print(f"The sensor error rate is {errorrate}%")
+    
+    
